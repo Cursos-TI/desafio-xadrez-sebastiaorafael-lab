@@ -14,6 +14,7 @@ int main() {
     int casasTorre = 5;
     int casasRainha = 8;
     int i;
+    int j;
 
     // --- Implementação de Movimentação do Bispo --- (Nível Novato - Tema 4)
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
@@ -46,6 +47,14 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("Movendo o Cavalo:\n");
+        for(i = 1; i <= 1; i++) 
+        {
+            for(j = 1; j <= 2; j++)
+            printf("Baixo\n");
+        }
+
+        printf("Esquerda\n");
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
