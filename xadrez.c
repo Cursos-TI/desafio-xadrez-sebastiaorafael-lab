@@ -12,7 +12,13 @@ void moverBispoRecursivo(int casas) {
     if (casas <= 0) {
         return;
     }
-    printf("Cima-Direita\n");
+    
+    if (casas > 1) {
+        printf("Cima\n");
+    } else {
+        printf("Direta\n");
+    }
+    
     moverBispoRecursivo(casas - 1);
 }
 
@@ -27,21 +33,20 @@ void moverRainhaRecursivo(int casas) {
 int main() {
     printf("--- DESAFIO XADREZ: NÍVEL MESTRE ---\n\n");
 
-    printf("Movimento da Torre (5 casas para a Direita - Recursivo):\n");
+    printf("Movimento da Torre:\n");
     moverTorreRecursivo(5); 
     printf("\n");
 
-    printf("Movimento do Bispo (5 casas para Cima-Direita - Recursivo):\n");
+    printf("Movimento do Bispo:\n");
     moverBispoRecursivo(5);
     printf("\n");
 
-    printf("Movimento da Rainha (8 casas para a Esquerda - Recursivo):\n");
+    printf("Movimento da Rainha:\n");
     moverRainhaRecursivo(8);
     printf("\n");
 
-    printf("Movimento do Cavalo (Cima-Cima-Direita - Loops Aninhados):\n");
+    printf("Movimento do Cavalo:\n");
     for (int i = 0; i < 1; i++) { 
-        printf("Iniciando movimento do Cavalo...\n");
         for (int vertical = 0; vertical < 2; vertical++) {
             printf("Cima\n");
         }
